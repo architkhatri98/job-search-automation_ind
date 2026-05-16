@@ -89,13 +89,13 @@ describe('application prep answer guidance', () => {
     const { heuristicAnswer } = require('../lib/application-prep');
 
     assert.equal(heuristicAnswer({
-      label: 'Are you legally authorized to work in the United States?',
+      label: 'Are you legally authorized to work in India?',
       options: ['Yes', 'No'],
       type: 'select',
     }, {}), 'Yes');
 
     assert.equal(heuristicAnswer({
-      label: 'Will you now or in the future require employer sponsorship to work in the United States?',
+      label: 'Will you now or in the future require employer sponsorship?',
       options: ['Yes', 'No'],
       type: 'select',
     }, {}), 'No');
@@ -104,7 +104,7 @@ describe('application prep answer guidance', () => {
   it('leaves ambiguous combined work-eligibility prompts unresolved', () => {
     const { splitResolvedFields } = require('../lib/application-prep');
     const field = {
-      label: 'Are you legally authorized to work in the United States and will you now or in the future require sponsorship?',
+      label: 'Are you legally authorized to work and will you now or in the future require sponsorship?',
       name: 'combo_auth',
       options: ['Yes', 'No'],
       type: 'select',
@@ -139,7 +139,7 @@ describe('application prep answer guidance', () => {
 
     try {
       process.env.APPLICANT_CURRENT_COMPANY = 'EliseAI';
-      process.env.APPLICANT_MAILING_ADDRESS = '2130 8th Ave W\nApt 3\nSeattle, WA 98119';
+      process.env.APPLICANT_MAILING_ADDRESS = '42 MG Road\nFlat 3B\nBangalore, KA 560001';
       delete require.cache[require.resolve('../config/applicant')];
       delete require.cache[require.resolve('../lib/application-prep')];
       const { heuristicAnswer } = require('../lib/application-prep');
@@ -177,7 +177,7 @@ describe('application prep answer guidance', () => {
         options: [],
         required: true,
         type: 'textarea',
-      }, {}), '2130 8th Ave W\nApt 3\nSeattle, WA 98119');
+      }, {}), '42 MG Road\nFlat 3B\nBangalore, KA 560001');
 
       assert.equal(heuristicAnswer({
         label: 'I agree to provide original, real-time responses during my interview without the use of AI-generated scripts or automated teleprompters.',

@@ -21,7 +21,7 @@ Read `$ARGUMENTS` — this is a raw LinkedIn job page paste. Extract the followi
 |---|---|
 | `title` | The job title (e.g. "Platform Engineer") — usually near the top before the company name |
 | `company` | Company name (e.g. "NeuBird AI") — the line or element just after or before the title |
-| `location` | Location string (e.g. "United States · Remote", "San Francisco, CA") — normalize dots/bullets to commas, note Remote separately |
+| `location` | Location string (e.g. "India · Remote", "Bangalore, Karnataka") — normalize dots/bullets to commas, note Remote separately |
 | `url` | Any `linkedin.com/jobs/view/` URL in the paste — use `null` if not present |
 | `posted_at` | "X days ago" / "X hours ago" / "X weeks ago" → convert to absolute ISO date (YYYY-MM-DD) using today's date |
 | `description` | Everything under "About the job" — full text, no truncation |

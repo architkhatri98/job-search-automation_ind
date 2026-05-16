@@ -4,14 +4,16 @@ Fictional example. Replace with real goals for the active profile.
 
 ## Current priority
 
-Find a Senior Platform or Senior Backend role at a growth-stage company where the scope is clearly IC but touches architecture decisions, not just ticket execution.
+Find a Senior Platform or Senior Backend role at a product-driven company where the scope is clearly IC but touches architecture decisions, not just ticket execution.
 
 ## Target companies (shortlist)
 
-- Stripe
-- HashiCorp
+- Razorpay
+- Zerodha
+- CRED
+- Postman
+- Stripe (India)
 - Anthropic
-- Linear
 
 See `profiles/example/companies.js` for the broader target list.
 

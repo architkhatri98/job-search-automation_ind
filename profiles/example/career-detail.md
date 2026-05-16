@@ -1,18 +1,18 @@
-# John Doe — Career Detail
+# Rahul Sharma — Career Detail
 
 Fictional example profile. This file supplements `resume.md` with the behind-the-scenes detail that doesn't fit on a resume: motivation, honest assessments, and the stories behind the metrics.
 
-## Acme Corp — Senior Platform Engineer (March 2022 to present)
+## Razorpay — Senior Platform Engineer (March 2022 to present)
 
 ### Why I took the role
 
-Acme was a Series C growth-stage company when I joined. Previous role at Globex had scaled me into solid backend fluency, but I wanted to get closer to infrastructure and own more of the production story. Acme was hiring for a hybrid "backend plus platform" role that matched what I was already drifting toward.
+Razorpay was scaling rapidly when I joined. Previous role at Flipkart had scaled me into solid backend fluency, but I wanted to get closer to infrastructure and own more of the production story. Razorpay was hiring for a hybrid "backend plus platform" role that matched what I was already drifting toward.
 
 ### The AWS cost reduction
 
 Joined and inherited an EKS setup that had been running without right-sizing for two years. Some node groups were 40% idle. Migrated batch workloads to spot instances after a two-week test run on a non-critical pipeline. Rewrote a few chatty services to batch API calls rather than fire one request per row.
 
-End state: $85K/month down to $51K/month. Took about four months of part-time work on top of my main project load.
+End state: 70L/month down to 42L/month. Took about four months of part-time work on top of my main project load.
 
 Honest assessment: some of this was low-hanging fruit from a platform that had grown without attention. Would not expect to repeat a 40% reduction at a company that was already paying attention to cost.
 
@@ -32,7 +32,7 @@ Built on Backstage. The hard part was not the scaffolding, it was getting the te
 
 Spent too long on the IDP in the early months when I should have been paying down observability debt first. A couple of incidents in Q3 would have been caught earlier with better tracing.
 
-## Globex — Backend Engineer (June 2019 to March 2022)
+## Flipkart — Backend Engineer (June 2019 to March 2022)
 
 ### Billing service rewrite
 
@@ -46,11 +46,11 @@ Honest assessment: this was not a clean rewrite. Kept some of the original error
 
 Biggest lesson: underinvested in dead-letter queue tooling early. When we hit a poison message, triage was harder than it should have been.
 
-## Initech — Software Engineer (July 2017 to June 2019)
+## Freshworks — Software Engineer (July 2017 to June 2019)
 
 ### Early-stage context
 
-First engineering hire. Founders were technical but stretched thin. I owned the API, schema, deploys, and the on-call pager for my first 18 months.
+Early engineering hire for a new product line. The product lead was technical but stretched thin. I owned the API, schema, deploys, and the on-call pager for my first 18 months.
 
 ### What it gave me
 
@@ -58,4 +58,4 @@ Comfort with ambiguity, willingness to touch whatever needs touching, a default 
 
 ### What it cost
 
-Two years without peer code review is real technical debt. The first year at Globex was a steep recalibration on code quality norms.
+Two years without peer code review is real technical debt. The first year at Flipkart was a steep recalibration on code quality norms.

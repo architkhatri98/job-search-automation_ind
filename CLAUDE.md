@@ -1,6 +1,6 @@
 # Claude Instructions
 
-This repo is a personal job-search pipeline. It scrapes job boards, scores listings with an LLM, serves a local dashboard, generates manual application prep, and creates tailored resumes. Final application submission is human-controlled.
+This repo is a personal job-search pipeline tailored for the Indian job market. It scrapes Indian and global job boards (including Naukri.com), scores listings with an LLM, serves a local dashboard, generates manual application prep, and creates tailored resumes. Final application submission is human-controlled. All defaults (country, timezone, salary in LPA, notice period, work authorization) are configured for Indian applicants and recruiters.
 
 ## Context system
 

@@ -84,15 +84,15 @@ describe('greenhouse auto-apply helpers', () => {
     assert.equal(outcome.details.pageTitle, 'Processing');
   });
 
-  it('treats the Armada-style authorization question as yes', () => {
-    const label = 'Are you currently authorized to work in the United States for any employer without restriction? (“Without restriction” means not tied to a specific employer and not dependent on a pending or future government filing.)';
-    assert.equal(answerForGreenhouseQuestion(label, { usWorkAuthorized: 'Yes', requiresSponsorship: 'No' }), 'Yes');
+  it('treats the work authorization question as yes', () => {
+    const label = 'Are you legally authorized to work in India?';
+    assert.equal(answerForGreenhouseQuestion(label, { indiaWorkAuthorized: 'Yes', requiresSponsorship: 'No' }), 'Yes');
   });
 
   it('prefers prepared answers over fallback heuristics', () => {
-    const label = 'Are you currently authorized to work in the United States for any employer without restriction? (“Without restriction” means not tied to a specific employer and not dependent on a pending or future government filing.)';
+    const label = 'Are you legally authorized to work in India?';
     const answer = resolveGreenhouseQuestionAnswer(label, {
-      usWorkAuthorized: 'No',
+      indiaWorkAuthorized: 'No',
       requiresSponsorship: 'No',
     }, {
       question_123: 'Yes',

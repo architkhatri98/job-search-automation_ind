@@ -62,7 +62,7 @@ describe('complexity helpers', () => {
   it('treats common greenhouse dropdowns as simple', () => {
     assert.equal(
       isSimpleGreenhouseQuestion({
-        label: 'Will you now or in the future require visa sponsorship to work in the United States?',
+        label: 'Will you now or in the future require visa sponsorship?',
         required: true,
         fields: [
           {

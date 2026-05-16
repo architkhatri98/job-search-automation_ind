@@ -1,13 +1,13 @@
-# Applicant Profile (example: John Doe)
+# Applicant Profile (example: Rahul Sharma)
 
 Fictional example. Replace with your own profile content.
 
 ## Who I am
 
 - Senior Platform / Backend Engineer, ~6 years experience
-- Based in Austin, TX (open to hybrid or remote)
-- Current role: Senior Platform Engineer at Acme Corp (March 2022 to present)
-- Previous: Backend Engineer at Globex (2019 to 2022), Software Engineer at Initech (2017 to 2019)
+- Based in Bangalore, Karnataka (open to hybrid or remote)
+- Current role: Senior Platform Engineer at Razorpay (March 2022 to present)
+- Previous: Backend Engineer at Flipkart (2019 to 2022), Software Engineer at Freshworks (2017 to 2019)
 
 ## How I work
 
@@ -18,9 +18,10 @@ Fictional example. Replace with your own profile content.
 
 ## Career preferences (summary)
 
-- Target comp: $180K base floor, $220K to $260K total
-- Hybrid in Austin preferred, fully remote is fine
-- Not currently looking at 5-day RTO outside Austin, or sole-infra-owner roles at Series A
+- Current CTC: 35 LPA, target: 45 to 55 LPA
+- Hybrid in Bangalore preferred, fully remote is fine
+- Not currently looking at night-shift US-hours roles, or sole-infra-owner roles at seed-stage startups
+- 30-day notice period (negotiable with buyout)
 
 ## Source of truth
 

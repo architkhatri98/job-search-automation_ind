@@ -29,6 +29,7 @@ const { scrapeAshby }      = require('./scrapers/ashby');
 const { scrapeWorkday }    = require('./scrapers/workday');
 const { scrapeBuiltin }    = require('./scrapers/builtin');
 const { scrapeRippling }   = require('./scrapers/rippling');
+const { scrapeNaukri }     = require('./scrapers/naukri');
 
 const { isLocationAllowed } = require('./lib/location-filter');
 const { MAX_AGE_DAYS }      = require('./config/companies');
@@ -59,7 +60,7 @@ function timed(label, fn) {
 async function scrapeAll() {
   log.info('Starting scrape across all platforms');
 
-  const [greenhouse, lever, workable, wellfound, remoteok, jobicy, arbeitnow, wwr, ashby, workday, builtin, rippling] = await Promise.allSettled([
+  const [greenhouse, lever, workable, wellfound, remoteok, jobicy, arbeitnow, wwr, ashby, workday, builtin, rippling, naukri] = await Promise.allSettled([
     timed('greenhouse', scrapeGreenhouse),
     timed('lever', scrapeLever),
     timed('workable', scrapeWorkable),
@@ -72,13 +73,14 @@ async function scrapeAll() {
     timed('workday', scrapeWorkday),
     timed('builtin', scrapeBuiltin),
     timed('rippling', scrapeRippling),
+    timed('naukri', scrapeNaukri),
   ]);
 
   const results = [
     ['greenhouse', greenhouse], ['lever', lever], ['workable', workable],
     ['wellfound', wellfound], ['remoteok', remoteok], ['jobicy', jobicy],
     ['arbeitnow', arbeitnow], ['wwr', wwr], ['ashby', ashby], ['workday', workday],
-    ['builtin', builtin], ['rippling', rippling],
+    ['builtin', builtin], ['rippling', rippling], ['naukri', naukri],
   ];
 
   const allJobs = results.flatMap(([label, r]) =>

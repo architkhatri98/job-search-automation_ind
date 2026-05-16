@@ -4,19 +4,22 @@ const { sleep, safeFetch, stripHtml } = require('../lib/utils');
 const { matchesSearchTerms } = require('../lib/scraper-utils');
 const { SCRAPER_DELAY_MS } = require('../config/constants');
 
-// Built In has regional subdomains (e.g. builtinseattle.com, builtinnyc.com, builtinaustin.com).
-// Set BUILTIN_SUBDOMAIN in .env to target a specific region, or leave default for nationwide.
+// Built In has regional subdomains (e.g. builtinseattle.com, builtinnyc.com).
+// Note: Built In is primarily US-focused. For Indian job market, the Naukri scraper
+// is the primary India-specific board. This scraper is kept for remote/global listings.
 const BUILTIN_SUBDOMAIN = process.env.BUILTIN_SUBDOMAIN || 'www';
 const BASE_URL = `https://${BUILTIN_SUBDOMAIN}.builtin.com`;
 const USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
 // Search terms to query Built In with (maps to their /jobs?search= param)
+// Includes "remote" variants to catch India-eligible remote roles
 const BUILTIN_SEARCHES = [
-  'devops',
-  'site reliability',
-  'infrastructure engineer',
-  'platform engineer',
-  'cloud engineer',
+  'devops remote',
+  'site reliability remote',
+  'infrastructure engineer remote',
+  'platform engineer remote',
+  'cloud engineer remote',
+  'backend engineer remote',
 ];
 
 function extractJobUrls(html) {

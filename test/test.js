@@ -177,7 +177,7 @@ describe('isLocationAllowed', () => {
   });
 
   it('passes through specific cities when no filter is set', () => {
-    assert.ok(isLocationAllowed('Austin, TX'));
+    assert.ok(isLocationAllowed('Bangalore, KA'));
     assert.ok(isLocationAllowed('Berlin, Germany'));
   });
 });

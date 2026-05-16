@@ -1,13 +1,13 @@
-# Acme Corp — Senior Platform Engineer
+# Razorpay — Senior Platform Engineer
 
 **March 2022 to present**
-**Austin, TX (hybrid, 2 days in office)**
+**Bangalore, Karnataka (hybrid, 3 days in office)**
 
 Fictional example file.
 
 ## Company context
 
-Acme Corp was a Series C growth-stage company at ~200 engineers when I joined. Ran on AWS, mostly EKS, Postgres, Go and Python services. Infrastructure was owned by a 6-person platform team that I joined as the 4th engineer.
+Razorpay was a late-stage fintech company at ~400 engineers when I joined. Ran on AWS, mostly EKS, Postgres, Go and Python services. Infrastructure was owned by a 6-person platform team that I joined as the 4th engineer.
 
 ## Scope of ownership
 
@@ -21,7 +21,7 @@ Acme Corp was a Series C growth-stage company at ~200 engineers when I joined. R
 
 ### Cost reduction program
 
-Reduced AWS spend from $85K/month to $51K/month over four months. Biggest wins:
+Reduced AWS spend from 70L/month to 42L/month over four months. Biggest wins:
 
 - EKS node right-sizing after analysis showed 40% idle capacity
 - Migration of batch jobs to spot instances with graceful interruption handling
